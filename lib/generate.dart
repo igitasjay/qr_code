@@ -26,6 +26,10 @@ class _GenerateQRState extends State<GenerateQR> {
               QrImageView(
                 data: controller.text.trim(),
                 size: 200,
+                // eyeStyle: const QrEyeStyle(color: Colors.white),
+                dataModuleStyle: const QrDataModuleStyle(
+                  color: Colors.white,
+                ),
                 foregroundColor: Colors.white,
               ),
             const SizedBox(height: 24),
